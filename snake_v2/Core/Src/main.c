@@ -26,6 +26,10 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "snake.h"
+
+
+
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
