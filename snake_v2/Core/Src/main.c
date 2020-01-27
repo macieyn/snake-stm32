@@ -51,7 +51,7 @@
 /* USER CODE BEGIN PV */
 
 uint8_t testowa[8] = {
-		0b11111100,
+		0b11111111,
 		0b10000000,
 		0b10000000,
 		0b11111000,
@@ -116,7 +116,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	while (1) {
-		int8_t game_over = 0;
+//		int8_t game_over = 0;
 
 		while(game_over == 0)
 		{

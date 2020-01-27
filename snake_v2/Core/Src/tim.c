@@ -26,6 +26,7 @@
 uint8_t bit_kolumny = 0;
 uint8_t bit_wiersza = 0;
 uint8_t multi_wiersze2 = 0x01;
+uint16_t delay = 0;
 /* USER CODE END 0 */
 
 TIM_HandleTypeDef htim14;
@@ -35,7 +36,7 @@ void MX_TIM14_Init(void)
 {
 
   htim14.Instance = TIM14;
-  htim14.Init.Prescaler = 499;
+  htim14.Init.Prescaler = 1040;
   htim14.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim14.Init.Period = 1;
   htim14.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
@@ -88,6 +89,7 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 
 /* USER CODE BEGIN 1 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+
 	if (bit_kolumny < 8) {
 
 		if (bit_wiersza < 8) {

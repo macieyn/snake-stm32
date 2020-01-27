@@ -20,7 +20,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "gpio.h"
 /* USER CODE BEGIN 0 */
-
+int8_t game_over = 1;
 /* USER CODE END 0 */
 
 /*----------------------------------------------------------------------------*/
@@ -96,6 +96,7 @@ void MX_GPIO_Init(void)
 void HAL_GPIO_EXTI_Falling_Callback(uint16_t GPIO_Pin) {
 	switch (GPIO_Pin) {
 	case SW_UP_Pin:
+		game_over = 0;
 		which_sw = 'w';
 		break;
 	case SW_DOWN_Pin:

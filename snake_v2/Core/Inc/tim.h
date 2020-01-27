@@ -36,6 +36,7 @@ extern TIM_HandleTypeDef htim14;
 uint8_t multi_wiersze;
 uint8_t bit_kolumny;
 uint8_t bit_wiersza;
+extern uint16_t delay;
 /* USER CODE END Private defines */
 
 void MX_TIM14_Init(void);

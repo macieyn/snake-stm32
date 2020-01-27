@@ -43,6 +43,7 @@ extern "C" {
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
 extern uint8_t testowa[8];
+extern int8_t game_over;
 
 /* USER CODE END EC */
 
