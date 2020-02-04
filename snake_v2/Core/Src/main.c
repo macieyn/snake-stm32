@@ -26,10 +26,6 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "snake.h"
-
-
-
-
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,17 +45,6 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
-uint8_t testowa[8] = {
-		0b11111100,
-		0b10000000,
-		0b10000000,
-		0b11111000,
-		0b10000000,
-		0b10000000,
-		0b11111100,
-		0b00000000
-};
 
 char which_sw = 0;
 
@@ -166,6 +151,9 @@ int main(void)
 
 			game_over = 1;
 		}
+
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
