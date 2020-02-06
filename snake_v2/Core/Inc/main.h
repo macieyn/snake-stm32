@@ -116,8 +116,8 @@ void clear_screen();
 #define WIERSZ_OFF 0
 #define WIERSZ_ON 1
 
-#define UP 's'
-#define DOWN 'w'
+#define UP 'w'
+#define DOWN 's'
 #define LEFT 'a'
 #define RIGHT 'd'
 

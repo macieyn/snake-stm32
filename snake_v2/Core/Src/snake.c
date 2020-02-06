@@ -39,8 +39,8 @@ void food_reached(Snake *snake, Coord *food){
 
 
 int8_t move_head(Snake *snake) {
-    if (snake->direction == UP) snake->body[0].x ++;
-    else if (snake->direction == DOWN) snake->body[0].x --;
+    if (snake->direction == DOWN) snake->body[0].x ++;
+    else if (snake->direction == UP) snake->body[0].x --;
     else if (snake->direction == LEFT) snake->body[0].y ++;
     else if (snake->direction == RIGHT) snake->body[0].y --;
     return overlap_check(snake, &snake->body[0]);
@@ -117,6 +117,7 @@ void start_gameplay_snake(void) {
 		snake.length = 0;
 		snake.direction = UP;
 		snake.body[0].x = 3, snake.body[0].y = 3;
+		which_sw = UP;
 		for (int i = 1; i < (sizeof(snake.body) / sizeof(snake.body[0])); i++) {
 			snake.body[i].x = -1, snake.body[i].y = -1;
 		}
@@ -130,7 +131,7 @@ void start_gameplay_snake(void) {
 
 		while (result != -1) {
 
-			HAL_Delay(GAME_DELAY);
+			HAL_Delay(GAME_DELAY/2);
 
 			change_direction(&snake, which_sw);
 
@@ -143,7 +144,10 @@ void start_gameplay_snake(void) {
 
 			result = wall_hit(&snake);
 
+			HAL_Delay(GAME_DELAY/2);
+
 			clear_display(virtual_screen);
+
 			set_screen(&food, &snake);
 		}
 
