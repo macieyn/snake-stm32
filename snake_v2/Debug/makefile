@@ -40,8 +40,8 @@ snake_v2.bin \
 all: snake_v2.elf secondary-outputs
 
 # Tool invocations
-snake_v2.elf: $(OBJS) $(USER_OBJS) C:\Programowanie\repozytoria\snake-stm32\snake_v2\STM32G030K6TX_FLASH.ld
-	arm-none-eabi-gcc -o "snake_v2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Programowanie\repozytoria\snake-stm32\snake_v2\STM32G030K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="snake_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+snake_v2.elf: $(OBJS) $(USER_OBJS) C:\workspace_STM32CubeIDE\github\snake-stm32\snake_v2\STM32G030K6TX_FLASH.ld
+	arm-none-eabi-gcc -o "snake_v2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\workspace_STM32CubeIDE\github\snake-stm32\snake_v2\STM32G030K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="snake_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

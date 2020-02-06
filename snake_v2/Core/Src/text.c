@@ -25,7 +25,7 @@ uint8_t get_letter_width (uint8_t *letter_shape) {
 	for(uint8_t row=0; row<8; row++) {
 		while(letter_shape[row] >> shift > 0) {
 			if (shift > 3) letter_width = shift;
-			shift ++;
+			shift++;
 		}
 	}
 	return letter_width;
