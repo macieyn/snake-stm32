@@ -96,17 +96,17 @@ void MX_GPIO_Init(void)
 void HAL_GPIO_EXTI_Falling_Callback(uint16_t GPIO_Pin) {
 	switch (GPIO_Pin) {
 	case SW_UP_Pin:
-		which_sw = 'w';
+		if (which_sw != DOWN) which_sw = UP;
 		game_over = 0;
 		break;
 	case SW_DOWN_Pin:
-		which_sw = 's';
+		if (which_sw != UP) which_sw = DOWN;
 		break;
 	case SW_LEFT_Pin:
-		which_sw = 'a';
+		if (which_sw != RIGHT) which_sw = LEFT;
 		break;
 	case SW_RIGHT_Pin:
-		which_sw = 'd';
+		if (which_sw != LEFT) which_sw = RIGHT;
 		break;
 	case SW_START_Pin:
 		break;

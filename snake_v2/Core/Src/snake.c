@@ -26,9 +26,15 @@ void clear_display(char display[]){
 };
 
 
-int8_t food_reached(Snake *snake, Coord *food){
-	if(snake->body[0].x == food->x && snake->body[0].y == food->y) return 1;
-    return 0;
+void food_reached(Snake *snake, Coord *food){
+	if(snake->body[0].x == food->x && snake->body[0].y == food->y) {
+		snake->length++;
+		int8_t overlap = -1;
+		while (overlap == -1) {
+			random_food(food);
+			overlap = overlap_check(snake, food);
+		}
+	}
 }
 
 
@@ -37,14 +43,14 @@ int8_t move_head(Snake *snake) {
     else if (snake->direction == DOWN) snake->body[0].x --;
     else if (snake->direction == LEFT) snake->body[0].y ++;
     else if (snake->direction == RIGHT) snake->body[0].y --;
-    return overlap_check(snake);
+    return overlap_check(snake, &snake->body[0]);
 }
 
 
 
-int8_t overlap_check(Snake *snake) {
+int8_t overlap_check(Snake *snake, Coord *position) {
     for (int i=1; i<SNAKE_MAX_LEN; i++) {
-        if (snake->body[i].x == snake->body[0].x && snake->body[i].y == snake->body[0].y) return -1;
+        if (snake->body[i].x == position->x && snake->body[i].y == position->y) return -1;
     }
     return 0;
 }
@@ -95,6 +101,16 @@ int8_t wall_hit(Snake *snake){
     return 0;
 }
 
+void game_over_screen(Snake *snake, Coord *food){
+	for (int8_t i = 0; i < 3; i ++) {
+		clear_display(virtual_screen);
+		HAL_Delay(100);
+		set_screen(food, snake);
+		HAL_Delay(100);
+	}
+}
+
+
 void start_gameplay_snake(void) {
 	while (game_over == 0) {
 		Snake snake;
@@ -110,29 +126,28 @@ void start_gameplay_snake(void) {
 
 		int result = 0;
 
-		while (result != -1) {
-			HAL_Delay(250);
+		set_screen(&food, &snake);
 
-			clear_display(virtual_screen);
-			set_screen(&food, &snake);
+		while (result != -1) {
+
+			HAL_Delay(GAME_DELAY);
 
 			change_direction(&snake, which_sw);
 
 			update_tail(&snake);
 
 			result = move_head(&snake); // overlap check
-			if (result == -1) {
-				break;
-			}
+			if (result == -1) break;
 
-			result = food_reached(&snake, &food); // hungry?
-			if (result == 1) {
-				snake.length++;
-				random_food(&food);
-			}
+			food_reached(&snake, &food); // hungry?
 
 			result = wall_hit(&snake);
+
+			clear_display(virtual_screen);
+			set_screen(&food, &snake);
 		}
+
+		game_over_screen(&snake, &food);
 
 		game_over = 1;
 		clear_display(virtual_screen);

@@ -6,12 +6,8 @@
 #include "tim.h"
 #include "gpio.h"
 
-#define UP 's'
-#define DOWN 'w'
-#define LEFT 'a'
-#define RIGHT 'd'
-
 #define SNAKE_MAX_LEN 64
+#define GAME_DELAY 250
 
 typedef struct Coord {
     int8_t x;
@@ -26,9 +22,9 @@ typedef struct Snake {
 
 int8_t  change_direction(Snake *snake, char direction);
 void clear_display(char display[]);
-int8_t  food_reached(Snake *snake, Coord *food);
+void  food_reached(Snake *snake, Coord *food);
 int8_t move_head(Snake *snake);
-int8_t  overlap_check(Snake *snake);
+int8_t  overlap_check(Snake *snake, Coord *position);
 void random_food(Coord *food);
 void set_screen(Coord *food, Snake *snake);
 void update_tail(Snake *snake);

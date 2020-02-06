@@ -109,6 +109,8 @@ void clear_screen();
 #define SW_UP_Pin GPIO_PIN_7
 #define SW_UP_GPIO_Port GPIOB
 #define SW_UP_EXTI_IRQn EXTI4_15_IRQn
+
+
 /* USER CODE BEGIN Private defines */
 
 #define KOLUMNA_OFF 1
@@ -116,6 +118,11 @@ void clear_screen();
 
 #define WIERSZ_OFF 0
 #define WIERSZ_ON 1
+
+#define UP 's'
+#define DOWN 'w'
+#define LEFT 'a'
+#define RIGHT 'd'
 
 /* USER CODE END Private defines */
 
