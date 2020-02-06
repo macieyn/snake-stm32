@@ -1,9 +1,0 @@
-snake.c:17:8:change_direction	16	static
-snake.c:24:6:clear_display	24	static
-snake.c:29:8:food_reached	16	static
-snake.c:37:8:move_head	16	static
-snake.c:47:8:overlap_check	24	static
-snake.c:55:6:random_food	16	static
-snake.c:61:6:set_screen	32	static
-snake.c:87:6:update_tail	24	static
-snake.c:95:8:wall_hit	16	static
