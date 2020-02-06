@@ -144,7 +144,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x423 Core/Src/font5x3.o
  .debug_macro   0x0000000000000000      0x136 Core/Src/font5x3.o
  .debug_line    0x0000000000000000      0x692 Core/Src/font5x3.o
- .debug_str     0x0000000000000000    0x77f6d Core/Src/font5x3.o
+ .debug_str     0x0000000000000000    0x77f69 Core/Src/font5x3.o
  .comment       0x0000000000000000       0x7c Core/Src/font5x3.o
  .ARM.attributes
                 0x0000000000000000       0x32 Core/Src/font5x3.o
@@ -370,6 +370,39 @@ Discarded input sections
  .group         0x0000000000000000        0xc Core/Src/snake.o
  .group         0x0000000000000000        0xc Core/Src/snake.o
  .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
+ .group         0x0000000000000000        0xc Core/Src/snake.o
  .text          0x0000000000000000        0x0 Core/Src/snake.o
  .data          0x0000000000000000        0x0 Core/Src/snake.o
  .bss           0x0000000000000000        0x0 Core/Src/snake.o
@@ -397,7 +430,38 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x3d Core/Src/snake.o
  .debug_macro   0x0000000000000000       0x16 Core/Src/snake.o
  .debug_macro   0x0000000000000000      0x145 Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0x103 Core/Src/snake.o
+ .debug_macro   0x0000000000000000       0x2e Core/Src/snake.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/snake.o
+ .debug_macro   0x0000000000000000       0xef Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0x1df Core/Src/snake.o
  .debug_macro   0x0000000000000000       0x1c Core/Src/snake.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0x4da Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0x11f Core/Src/snake.o
+ .debug_macro   0x0000000000000000     0x9f2f Core/Src/snake.o
+ .debug_macro   0x0000000000000000       0x3c Core/Src/snake.o
+ .debug_macro   0x0000000000000000     0x3468 Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0x485 Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0xd91 Core/Src/snake.o
+ .debug_macro   0x0000000000000000       0xfb Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0x153 Core/Src/snake.o
+ .debug_macro   0x0000000000000000       0xff Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0x2b8 Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0x1a5 Core/Src/snake.o
+ .debug_macro   0x0000000000000000       0x43 Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0x1f1 Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0x1b7 Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0x287 Core/Src/snake.o
+ .debug_macro   0x0000000000000000       0x28 Core/Src/snake.o
+ .debug_macro   0x0000000000000000       0xac Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0x11b Core/Src/snake.o
+ .debug_macro   0x0000000000000000       0xd2 Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0xa2f Core/Src/snake.o
+ .debug_macro   0x0000000000000000       0xe9 Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0x423 Core/Src/snake.o
+ .debug_macro   0x0000000000000000      0x136 Core/Src/snake.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/snake.o
  .debug_macro   0x0000000000000000       0x35 Core/Src/snake.o
  .group         0x0000000000000000        0xc Core/Src/stm32g0xx_hal_msp.o
  .group         0x0000000000000000        0xc Core/Src/stm32g0xx_hal_msp.o
@@ -914,12 +978,12 @@ Discarded input sections
  .text.create_display_buffer
                 0x0000000000000000      0x144 Core/Src/text.o
  .text.print    0x0000000000000000       0x18 Core/Src/text.o
- .debug_info    0x0000000000000000      0xc81 Core/Src/text.o
- .debug_abbrev  0x0000000000000000      0x237 Core/Src/text.o
+ .debug_info    0x0000000000000000     0x123c Core/Src/text.o
+ .debug_abbrev  0x0000000000000000      0x255 Core/Src/text.o
  .debug_aranges
                 0x0000000000000000       0x40 Core/Src/text.o
  .debug_ranges  0x0000000000000000       0x30 Core/Src/text.o
- .debug_macro   0x0000000000000000      0x365 Core/Src/text.o
+ .debug_macro   0x0000000000000000      0x379 Core/Src/text.o
  .debug_macro   0x0000000000000000      0xa48 Core/Src/text.o
  .debug_macro   0x0000000000000000       0x22 Core/Src/text.o
  .debug_macro   0x0000000000000000       0x40 Core/Src/text.o
@@ -985,9 +1049,9 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x3d Core/Src/text.o
  .debug_macro   0x0000000000000000       0x16 Core/Src/text.o
  .debug_macro   0x0000000000000000      0x145 Core/Src/text.o
- .debug_macro   0x0000000000000000       0x1c Core/Src/text.o
- .debug_line    0x0000000000000000      0x983 Core/Src/text.o
- .debug_str     0x0000000000000000    0x7c1e4 Core/Src/text.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/text.o
+ .debug_line    0x0000000000000000      0x996 Core/Src/text.o
+ .debug_str     0x0000000000000000    0x7c6e0 Core/Src/text.o
  .comment       0x0000000000000000       0x7c Core/Src/text.o
  .debug_frame   0x0000000000000000       0xb0 Core/Src/text.o
  .ARM.attributes
@@ -1127,7 +1191,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x3d Core/Src/tim.o
  .debug_macro   0x0000000000000000       0x16 Core/Src/tim.o
  .debug_macro   0x0000000000000000      0x145 Core/Src/tim.o
- .debug_macro   0x0000000000000000       0x1c Core/Src/tim.o
+ .debug_macro   0x0000000000000000       0x22 Core/Src/tim.o
  .text          0x0000000000000000       0x14 Core/Startup/startup_stm32g030k6tx.o
  .data          0x0000000000000000        0x0 Core/Startup/startup_stm32g030k6tx.o
  .bss           0x0000000000000000        0x0 Core/Startup/startup_stm32g030k6tx.o
@@ -3119,43 +3183,43 @@ LOAD c:/st/stm32cubeide_1.2.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .text.SystemClock_Config
                 0x0000000008000428       0x90 Core/Src/main.o
                 0x0000000008000428                SystemClock_Config
- .text.start_gameplay_snake
-                0x00000000080004b8      0x148 Core/Src/main.o
-                0x00000000080004b8                start_gameplay_snake
  .text.clear_screen
-                0x0000000008000600       0x28 Core/Src/main.o
-                0x0000000008000600                clear_screen
+                0x00000000080004b8       0x28 Core/Src/main.o
+                0x00000000080004b8                clear_screen
  .text.Error_Handler
-                0x0000000008000628        0xa Core/Src/main.o
-                0x0000000008000628                Error_Handler
+                0x00000000080004e0        0xa Core/Src/main.o
+                0x00000000080004e0                Error_Handler
  .text.change_direction
-                0x0000000008000632       0x34 Core/Src/snake.o
-                0x0000000008000632                change_direction
+                0x00000000080004ea       0x34 Core/Src/snake.o
+                0x00000000080004ea                change_direction
  .text.clear_display
-                0x0000000008000666       0x2c Core/Src/snake.o
-                0x0000000008000666                clear_display
+                0x000000000800051e       0x2c Core/Src/snake.o
+                0x000000000800051e                clear_display
  .text.food_reached
-                0x0000000008000692       0x38 Core/Src/snake.o
-                0x0000000008000692                food_reached
+                0x000000000800054a       0x38 Core/Src/snake.o
+                0x000000000800054a                food_reached
  .text.move_head
-                0x00000000080006ca       0x90 Core/Src/snake.o
-                0x00000000080006ca                move_head
+                0x0000000008000582       0x90 Core/Src/snake.o
+                0x0000000008000582                move_head
  .text.overlap_check
-                0x000000000800075a       0x5a Core/Src/snake.o
-                0x000000000800075a                overlap_check
+                0x0000000008000612       0x5a Core/Src/snake.o
+                0x0000000008000612                overlap_check
  .text.random_food
-                0x00000000080007b4       0x4c Core/Src/snake.o
-                0x00000000080007b4                random_food
+                0x000000000800066c       0x4c Core/Src/snake.o
+                0x000000000800066c                random_food
  .text.set_screen
-                0x0000000008000800      0x100 Core/Src/snake.o
-                0x0000000008000800                set_screen
+                0x00000000080006b8      0x100 Core/Src/snake.o
+                0x00000000080006b8                set_screen
  .text.update_tail
-                0x0000000008000900       0x62 Core/Src/snake.o
-                0x0000000008000900                update_tail
+                0x00000000080007b8       0x62 Core/Src/snake.o
+                0x00000000080007b8                update_tail
  .text.wall_hit
-                0x0000000008000962       0x40 Core/Src/snake.o
-                0x0000000008000962                wall_hit
- *fill*         0x00000000080009a2        0x2 
+                0x000000000800081a       0x40 Core/Src/snake.o
+                0x000000000800081a                wall_hit
+ *fill*         0x000000000800085a        0x2 
+ .text.start_gameplay_snake
+                0x000000000800085c      0x148 Core/Src/snake.o
+                0x000000000800085c                start_gameplay_snake
  .text.HAL_MspInit
                 0x00000000080009a4       0x48 Core/Src/stm32g0xx_hal_msp.o
                 0x00000000080009a4                HAL_MspInit
@@ -3566,49 +3630,49 @@ LOAD c:/st/stm32cubeide_1.2.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x0000000000000579       0x1e c:/st/stm32cubeide_1.2.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
 OUTPUT(snake_v2.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000     0xb3b7
+.debug_info     0x0000000000000000     0xba5d
  .debug_info    0x0000000000000000      0x5d5 Core/Src/gpio.o
- .debug_info    0x00000000000005d5     0x12f5 Core/Src/main.o
- .debug_info    0x00000000000018ca      0xb7c Core/Src/snake.o
- .debug_info    0x0000000000002446      0x385 Core/Src/stm32g0xx_hal_msp.o
- .debug_info    0x00000000000027cb      0x802 Core/Src/stm32g0xx_it.o
- .debug_info    0x0000000000002fcd      0x91c Core/Src/sysmem.o
- .debug_info    0x00000000000038e9      0x434 Core/Src/system_stm32g0xx.o
- .debug_info    0x0000000000003d1d     0x1398 Core/Src/tim.o
- .debug_info    0x00000000000050b5       0x22 Core/Startup/startup_stm32g030k6tx.o
- .debug_info    0x00000000000050d7      0x8e6 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
- .debug_info    0x00000000000059bd      0x941 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
- .debug_info    0x00000000000062fe      0x63a Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
- .debug_info    0x0000000000006938      0x552 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
- .debug_info    0x0000000000006e8a      0xa61 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
- .debug_info    0x00000000000078eb     0x2640 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o
- .debug_info    0x0000000000009f2b     0x148c Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o
+ .debug_info    0x00000000000005d5     0x121c Core/Src/main.o
+ .debug_info    0x00000000000017f1     0x12f0 Core/Src/snake.o
+ .debug_info    0x0000000000002ae1      0x385 Core/Src/stm32g0xx_hal_msp.o
+ .debug_info    0x0000000000002e66      0x802 Core/Src/stm32g0xx_it.o
+ .debug_info    0x0000000000003668      0x91c Core/Src/sysmem.o
+ .debug_info    0x0000000000003f84      0x434 Core/Src/system_stm32g0xx.o
+ .debug_info    0x00000000000043b8     0x13a3 Core/Src/tim.o
+ .debug_info    0x000000000000575b       0x22 Core/Startup/startup_stm32g030k6tx.o
+ .debug_info    0x000000000000577d      0x8e6 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
+ .debug_info    0x0000000000006063      0x941 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
+ .debug_info    0x00000000000069a4      0x63a Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
+ .debug_info    0x0000000000006fde      0x552 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
+ .debug_info    0x0000000000007530      0xa61 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
+ .debug_info    0x0000000000007f91     0x2640 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o
+ .debug_info    0x000000000000a5d1     0x148c Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o
 
-.debug_abbrev   0x0000000000000000     0x1ca2
+.debug_abbrev   0x0000000000000000     0x1cd1
  .debug_abbrev  0x0000000000000000      0x173 Core/Src/gpio.o
- .debug_abbrev  0x0000000000000173      0x25a Core/Src/main.o
- .debug_abbrev  0x00000000000003cd      0x221 Core/Src/snake.o
- .debug_abbrev  0x00000000000005ee      0x125 Core/Src/stm32g0xx_hal_msp.o
- .debug_abbrev  0x0000000000000713      0x169 Core/Src/stm32g0xx_it.o
- .debug_abbrev  0x000000000000087c      0x1bb Core/Src/sysmem.o
- .debug_abbrev  0x0000000000000a37      0x147 Core/Src/system_stm32g0xx.o
- .debug_abbrev  0x0000000000000b7e      0x22a Core/Src/tim.o
- .debug_abbrev  0x0000000000000da8       0x12 Core/Startup/startup_stm32g030k6tx.o
- .debug_abbrev  0x0000000000000dba      0x242 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
- .debug_abbrev  0x0000000000000ffc      0x27c Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
- .debug_abbrev  0x0000000000001278      0x1b7 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
- .debug_abbrev  0x000000000000142f      0x1f6 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
- .debug_abbrev  0x0000000000001625      0x211 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
- .debug_abbrev  0x0000000000001836      0x23f Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o
- .debug_abbrev  0x0000000000001a75      0x22d Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o
+ .debug_abbrev  0x0000000000000173      0x22a Core/Src/main.o
+ .debug_abbrev  0x000000000000039d      0x280 Core/Src/snake.o
+ .debug_abbrev  0x000000000000061d      0x125 Core/Src/stm32g0xx_hal_msp.o
+ .debug_abbrev  0x0000000000000742      0x169 Core/Src/stm32g0xx_it.o
+ .debug_abbrev  0x00000000000008ab      0x1bb Core/Src/sysmem.o
+ .debug_abbrev  0x0000000000000a66      0x147 Core/Src/system_stm32g0xx.o
+ .debug_abbrev  0x0000000000000bad      0x22a Core/Src/tim.o
+ .debug_abbrev  0x0000000000000dd7       0x12 Core/Startup/startup_stm32g030k6tx.o
+ .debug_abbrev  0x0000000000000de9      0x242 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
+ .debug_abbrev  0x000000000000102b      0x27c Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
+ .debug_abbrev  0x00000000000012a7      0x1b7 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
+ .debug_abbrev  0x000000000000145e      0x1f6 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
+ .debug_abbrev  0x0000000000001654      0x211 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
+ .debug_abbrev  0x0000000000001865      0x23f Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o
+ .debug_abbrev  0x0000000000001aa4      0x22d Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o
 
 .debug_aranges  0x0000000000000000      0xa88
  .debug_aranges
                 0x0000000000000000       0x28 Core/Src/gpio.o
  .debug_aranges
-                0x0000000000000028       0x40 Core/Src/main.o
+                0x0000000000000028       0x38 Core/Src/main.o
  .debug_aranges
-                0x0000000000000068       0x60 Core/Src/snake.o
+                0x0000000000000060       0x68 Core/Src/snake.o
  .debug_aranges
                 0x00000000000000c8       0x20 Core/Src/stm32g0xx_hal_msp.o
  .debug_aranges
@@ -3638,8 +3702,8 @@ OUTPUT(snake_v2.elf elf32-littlearm)
 
 .debug_ranges   0x0000000000000000      0x990
  .debug_ranges  0x0000000000000000       0x18 Core/Src/gpio.o
- .debug_ranges  0x0000000000000018       0x30 Core/Src/main.o
- .debug_ranges  0x0000000000000048       0x50 Core/Src/snake.o
+ .debug_ranges  0x0000000000000018       0x28 Core/Src/main.o
+ .debug_ranges  0x0000000000000040       0x58 Core/Src/snake.o
  .debug_ranges  0x0000000000000098       0x10 Core/Src/stm32g0xx_hal_msp.o
  .debug_ranges  0x00000000000000a8       0x48 Core/Src/stm32g0xx_it.o
  .debug_ranges  0x00000000000000f0       0x10 Core/Src/sysmem.o
@@ -3654,108 +3718,110 @@ OUTPUT(snake_v2.elf elf32-littlearm)
  .debug_ranges  0x0000000000000478      0x3a8 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o
  .debug_ranges  0x0000000000000820      0x170 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o
 
-.debug_macro    0x0000000000000000     0x3051
+.debug_macro    0x0000000000000000     0x32fa
  .debug_macro   0x0000000000000000      0x1c6 Core/Src/gpio.o
- .debug_macro   0x00000000000001c6      0x339 Core/Src/main.o
- .debug_macro   0x00000000000004ff       0x46 Core/Src/main.o
- .debug_macro   0x0000000000000545       0x18 Core/Src/main.o
- .debug_macro   0x000000000000055d       0x3c Core/Src/main.o
- .debug_macro   0x0000000000000599       0x34 Core/Src/main.o
- .debug_macro   0x00000000000005cd       0x16 Core/Src/main.o
- .debug_macro   0x00000000000005e3       0x35 Core/Src/main.o
- .debug_macro   0x0000000000000618      0x32a Core/Src/main.o
- .debug_macro   0x0000000000000942       0x10 Core/Src/main.o
- .debug_macro   0x0000000000000952       0x52 Core/Src/main.o
- .debug_macro   0x00000000000009a4       0x1f Core/Src/main.o
- .debug_macro   0x00000000000009c3       0x43 Core/Src/main.o
- .debug_macro   0x0000000000000a06       0x20 Core/Src/main.o
- .debug_macro   0x0000000000000a26      0x1a3 Core/Src/main.o
- .debug_macro   0x0000000000000bc9       0x10 Core/Src/main.o
- .debug_macro   0x0000000000000bd9       0x1c Core/Src/main.o
- .debug_macro   0x0000000000000bf5       0x52 Core/Src/main.o
- .debug_macro   0x0000000000000c47       0x40 Core/Src/main.o
- .debug_macro   0x0000000000000c87       0x10 Core/Src/main.o
- .debug_macro   0x0000000000000c97       0x40 Core/Src/main.o
- .debug_macro   0x0000000000000cd7       0xd7 Core/Src/main.o
- .debug_macro   0x0000000000000dae       0x1c Core/Src/main.o
- .debug_macro   0x0000000000000dca       0x3d Core/Src/main.o
- .debug_macro   0x0000000000000e07       0x16 Core/Src/main.o
- .debug_macro   0x0000000000000e1d      0x145 Core/Src/main.o
- .debug_macro   0x0000000000000f62       0x1c Core/Src/main.o
- .debug_macro   0x0000000000000f7e      0x1d9 Core/Src/snake.o
- .debug_macro   0x0000000000001157       0x40 Core/Src/snake.o
- .debug_macro   0x0000000000001197       0x94 Core/Src/snake.o
- .debug_macro   0x000000000000122b       0x57 Core/Src/snake.o
- .debug_macro   0x0000000000001282       0x97 Core/Src/snake.o
- .debug_macro   0x0000000000001319      0x330 Core/Src/snake.o
- .debug_macro   0x0000000000001649       0xfd Core/Src/snake.o
- .debug_macro   0x0000000000001746       0x16 Core/Src/snake.o
- .debug_macro   0x000000000000175c       0x16 Core/Src/snake.o
- .debug_macro   0x0000000000001772       0x29 Core/Src/snake.o
- .debug_macro   0x000000000000179b      0x1bc Core/Src/stm32g0xx_hal_msp.o
- .debug_macro   0x0000000000001957      0x1c6 Core/Src/stm32g0xx_it.o
- .debug_macro   0x0000000000001b1d      0x1ae Core/Src/sysmem.o
- .debug_macro   0x0000000000001ccb      0x23b Core/Src/sysmem.o
- .debug_macro   0x0000000000001f06      0x1b3 Core/Src/system_stm32g0xx.o
- .debug_macro   0x00000000000020b9      0x32b Core/Src/tim.o
- .debug_macro   0x00000000000023e4      0x1cb Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
- .debug_macro   0x00000000000025af      0x1ad Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
- .debug_macro   0x000000000000275c      0x1e5 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
- .debug_macro   0x0000000000002941      0x1bf Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
- .debug_macro   0x0000000000002b00      0x1e9 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
- .debug_macro   0x0000000000002ce9      0x1b5 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o
- .debug_macro   0x0000000000002e9e      0x1b3 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o
+ .debug_macro   0x00000000000001c6      0x341 Core/Src/main.o
+ .debug_macro   0x0000000000000507       0x46 Core/Src/main.o
+ .debug_macro   0x000000000000054d       0x18 Core/Src/main.o
+ .debug_macro   0x0000000000000565       0x3c Core/Src/main.o
+ .debug_macro   0x00000000000005a1       0x34 Core/Src/main.o
+ .debug_macro   0x00000000000005d5       0x16 Core/Src/main.o
+ .debug_macro   0x00000000000005eb       0x35 Core/Src/main.o
+ .debug_macro   0x0000000000000620      0x32a Core/Src/main.o
+ .debug_macro   0x000000000000094a       0x10 Core/Src/main.o
+ .debug_macro   0x000000000000095a       0x52 Core/Src/main.o
+ .debug_macro   0x00000000000009ac       0x1f Core/Src/main.o
+ .debug_macro   0x00000000000009cb       0x43 Core/Src/main.o
+ .debug_macro   0x0000000000000a0e       0x20 Core/Src/main.o
+ .debug_macro   0x0000000000000a2e      0x1a3 Core/Src/main.o
+ .debug_macro   0x0000000000000bd1       0x10 Core/Src/main.o
+ .debug_macro   0x0000000000000be1       0x1c Core/Src/main.o
+ .debug_macro   0x0000000000000bfd       0x52 Core/Src/main.o
+ .debug_macro   0x0000000000000c4f       0x40 Core/Src/main.o
+ .debug_macro   0x0000000000000c8f       0x10 Core/Src/main.o
+ .debug_macro   0x0000000000000c9f       0x40 Core/Src/main.o
+ .debug_macro   0x0000000000000cdf       0xd7 Core/Src/main.o
+ .debug_macro   0x0000000000000db6       0x1c Core/Src/main.o
+ .debug_macro   0x0000000000000dd2       0x3d Core/Src/main.o
+ .debug_macro   0x0000000000000e0f       0x16 Core/Src/main.o
+ .debug_macro   0x0000000000000e25      0x145 Core/Src/main.o
+ .debug_macro   0x0000000000000f6a       0x22 Core/Src/main.o
+ .debug_macro   0x0000000000000f8c      0x363 Core/Src/snake.o
+ .debug_macro   0x00000000000012ef       0x40 Core/Src/snake.o
+ .debug_macro   0x000000000000132f       0x94 Core/Src/snake.o
+ .debug_macro   0x00000000000013c3       0x57 Core/Src/snake.o
+ .debug_macro   0x000000000000141a       0x97 Core/Src/snake.o
+ .debug_macro   0x00000000000014b1      0x330 Core/Src/snake.o
+ .debug_macro   0x00000000000017e1       0xfd Core/Src/snake.o
+ .debug_macro   0x00000000000018de       0xaf Core/Src/snake.o
+ .debug_macro   0x000000000000198d       0x54 Core/Src/snake.o
+ .debug_macro   0x00000000000019e1       0x16 Core/Src/snake.o
+ .debug_macro   0x00000000000019f7       0x16 Core/Src/snake.o
+ .debug_macro   0x0000000000001a0d       0x29 Core/Src/snake.o
+ .debug_macro   0x0000000000001a36      0x1bc Core/Src/stm32g0xx_hal_msp.o
+ .debug_macro   0x0000000000001bf2      0x1c6 Core/Src/stm32g0xx_it.o
+ .debug_macro   0x0000000000001db8      0x1ae Core/Src/sysmem.o
+ .debug_macro   0x0000000000001f66      0x23b Core/Src/sysmem.o
+ .debug_macro   0x00000000000021a1      0x1b3 Core/Src/system_stm32g0xx.o
+ .debug_macro   0x0000000000002354      0x339 Core/Src/tim.o
+ .debug_macro   0x000000000000268d      0x1cb Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
+ .debug_macro   0x0000000000002858      0x1ad Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
+ .debug_macro   0x0000000000002a05      0x1e5 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
+ .debug_macro   0x0000000000002bea      0x1bf Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
+ .debug_macro   0x0000000000002da9      0x1e9 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
+ .debug_macro   0x0000000000002f92      0x1b5 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o
+ .debug_macro   0x0000000000003147      0x1b3 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o
 
-.debug_line     0x0000000000000000     0x8e13
+.debug_line     0x0000000000000000     0x914d
  .debug_line    0x0000000000000000      0x6dd Core/Src/gpio.o
- .debug_line    0x00000000000006dd      0x925 Core/Src/main.o
- .debug_line    0x0000000000001002      0x6d1 Core/Src/snake.o
- .debug_line    0x00000000000016d3      0x6a2 Core/Src/stm32g0xx_hal_msp.o
- .debug_line    0x0000000000001d75      0x72f Core/Src/stm32g0xx_it.o
- .debug_line    0x00000000000024a4      0x55e Core/Src/sysmem.o
- .debug_line    0x0000000000002a02      0x6be Core/Src/system_stm32g0xx.o
- .debug_line    0x00000000000030c0      0x8cd Core/Src/tim.o
- .debug_line    0x000000000000398d       0x89 Core/Startup/startup_stm32g030k6tx.o
- .debug_line    0x0000000000003a16      0x8cb Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
- .debug_line    0x00000000000042e1      0x8e9 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
- .debug_line    0x0000000000004bca      0x831 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
- .debug_line    0x00000000000053fb      0x81a Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
- .debug_line    0x0000000000005c15      0x98f Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
- .debug_line    0x00000000000065a4     0x1a7a Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o
- .debug_line    0x000000000000801e      0xdf5 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o
+ .debug_line    0x00000000000006dd      0x8d8 Core/Src/main.o
+ .debug_line    0x0000000000000fb5      0xa4e Core/Src/snake.o
+ .debug_line    0x0000000000001a03      0x6a2 Core/Src/stm32g0xx_hal_msp.o
+ .debug_line    0x00000000000020a5      0x72f Core/Src/stm32g0xx_it.o
+ .debug_line    0x00000000000027d4      0x55e Core/Src/sysmem.o
+ .debug_line    0x0000000000002d32      0x6be Core/Src/system_stm32g0xx.o
+ .debug_line    0x00000000000033f0      0x8d7 Core/Src/tim.o
+ .debug_line    0x0000000000003cc7       0x89 Core/Startup/startup_stm32g030k6tx.o
+ .debug_line    0x0000000000003d50      0x8cb Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
+ .debug_line    0x000000000000461b      0x8e9 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
+ .debug_line    0x0000000000004f04      0x831 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
+ .debug_line    0x0000000000005735      0x81a Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
+ .debug_line    0x0000000000005f4f      0x98f Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
+ .debug_line    0x00000000000068de     0x1a7a Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o
+ .debug_line    0x0000000000008358      0xdf5 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o
 
-.debug_str      0x0000000000000000    0x7ef00
- .debug_str     0x0000000000000000    0x77d3f Core/Src/gpio.o
-                                      0x78267 (size before relaxing)
- .debug_str     0x0000000000077d3f     0x468f Core/Src/main.o
-                                      0x7c715 (size before relaxing)
- .debug_str     0x000000000007c3ce      0x183 Core/Src/snake.o
-                                       0x7775 (size before relaxing)
- .debug_str     0x000000000007c551       0x2c Core/Src/stm32g0xx_hal_msp.o
-                                      0x78023 (size before relaxing)
- .debug_str     0x000000000007c57d       0xae Core/Src/stm32g0xx_it.o
-                                      0x784a2 (size before relaxing)
- .debug_str     0x000000000007c62b      0x4fc Core/Src/sysmem.o
+.debug_str      0x0000000000000000    0x7ef49
+ .debug_str     0x0000000000000000    0x77d3b Core/Src/gpio.o
+                                      0x78263 (size before relaxing)
+ .debug_str     0x0000000000077d3b     0x4673 Core/Src/main.o
+                                      0x7c6d9 (size before relaxing)
+ .debug_str     0x000000000007c3ae      0x1b0 Core/Src/snake.o
+                                      0x7c6f4 (size before relaxing)
+ .debug_str     0x000000000007c55e       0x2c Core/Src/stm32g0xx_hal_msp.o
+                                      0x7801f (size before relaxing)
+ .debug_str     0x000000000007c58a       0xae Core/Src/stm32g0xx_it.o
+                                      0x7849e (size before relaxing)
+ .debug_str     0x000000000007c638      0x4fc Core/Src/sysmem.o
                                        0x7a4d (size before relaxing)
- .debug_str     0x000000000007cb27       0x9c Core/Src/system_stm32g0xx.o
+ .debug_str     0x000000000007cb34       0xd8 Core/Src/system_stm32g0xx.o
                                       0x77b6a (size before relaxing)
- .debug_str     0x000000000007cbc3       0xaa Core/Src/tim.o
-                                      0x7c867 (size before relaxing)
- .debug_str     0x000000000007cc6d       0x36 Core/Startup/startup_stm32g030k6tx.o
+ .debug_str     0x000000000007cc0c       0xaa Core/Src/tim.o
+                                      0x7c887 (size before relaxing)
+ .debug_str     0x000000000007ccb6       0x36 Core/Startup/startup_stm32g030k6tx.o
                                          0x74 (size before relaxing)
- .debug_str     0x000000000007cca3      0x404 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
+ .debug_str     0x000000000007ccec      0x404 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
                                       0x78114 (size before relaxing)
- .debug_str     0x000000000007d0a7      0x29f Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
+ .debug_str     0x000000000007d0f0      0x29f Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
                                       0x77f8e (size before relaxing)
- .debug_str     0x000000000007d346      0x213 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
+ .debug_str     0x000000000007d38f      0x213 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
                                       0x77d4c (size before relaxing)
- .debug_str     0x000000000007d559      0x241 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
+ .debug_str     0x000000000007d5a2      0x241 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
                                       0x77da0 (size before relaxing)
- .debug_str     0x000000000007d79a      0x360 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
+ .debug_str     0x000000000007d7e3      0x360 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
                                       0x780ee (size before relaxing)
- .debug_str     0x000000000007dafa      0xd86 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o
+ .debug_str     0x000000000007db43      0xd86 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim.o
                                       0x78da7 (size before relaxing)
- .debug_str     0x000000000007e880      0x680 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o
+ .debug_str     0x000000000007e8c9      0x680 Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_tim_ex.o
                                       0x7873d (size before relaxing)
 
 .comment        0x0000000000000000       0x7b
@@ -3778,8 +3844,8 @@ OUTPUT(snake_v2.elf elf32-littlearm)
 
 .debug_frame    0x0000000000000000     0x2614
  .debug_frame   0x0000000000000000       0x50 Core/Src/gpio.o
- .debug_frame   0x0000000000000050       0xa4 Core/Src/main.o
- .debug_frame   0x00000000000000f4      0x130 Core/Src/snake.o
+ .debug_frame   0x0000000000000050       0x84 Core/Src/main.o
+ .debug_frame   0x00000000000000d4      0x150 Core/Src/snake.o
  .debug_frame   0x0000000000000224       0x30 Core/Src/stm32g0xx_hal_msp.o
  .debug_frame   0x0000000000000254       0xf0 Core/Src/stm32g0xx_it.o
  .debug_frame   0x0000000000000344       0x30 Core/Src/sysmem.o

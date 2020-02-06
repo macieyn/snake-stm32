@@ -2,11 +2,16 @@
 #define SNAKE_H_
 
 #include <stdio.h>
+#include "main.h"
+#include "tim.h"
+#include "gpio.h"
 
 #define UP 's'
 #define DOWN 'w'
 #define LEFT 'a'
 #define RIGHT 'd'
+
+#define SNAKE_MAX_LEN 64
 
 typedef struct Coord {
     int8_t x;
@@ -15,7 +20,7 @@ typedef struct Coord {
 
 typedef struct Snake {
     int8_t length;
-    Coord body[64];
+    Coord body[SNAKE_MAX_LEN];
     char direction;
 } Snake; 
 
@@ -28,6 +33,7 @@ void random_food(Coord *food);
 void set_screen(Coord *food, Snake *snake);
 void update_tail(Snake *snake);
 int8_t  wall_hit(Snake *snake);
+void start_gameplay_snake(void);
 
 extern char virtual_screen[8];
 

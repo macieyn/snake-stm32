@@ -27,7 +27,7 @@ Core/Src/text.o: ../Core/Src/text.c ../Core/Inc/text.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h \
- ../Core/Inc/snake.h
+ ../Core/Inc/snake.h ../Core/Inc/tim.h ../Core/Inc/gpio.h
 
 ../Core/Inc/text.h:
 
@@ -90,3 +90,7 @@ Core/Src/text.o: ../Core/Src/text.c ../Core/Inc/text.h \
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h:
 
 ../Core/Inc/snake.h:
+
+../Core/Inc/tim.h:
+
+../Core/Inc/gpio.h:

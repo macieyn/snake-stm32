@@ -57,7 +57,6 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 
-void start_gameplay_snake();
 void clear_screen();
 
 /* USER CODE END EFP */
