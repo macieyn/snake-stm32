@@ -30,7 +30,14 @@
 int8_t game_over = 1;
 /* USER CODE END 1 */
 
-/** Configure pins
+/** Configure pins as 
+        * Analog 
+        * Input 
+        * Output
+        * EVENT_OUT
+        * EXTI
+        * Free pins are configured automatically as Analog (this feature is enabled through 
+        * the Code Generation settings)
 */
 void MX_GPIO_Init(void)
 {
@@ -46,12 +53,13 @@ void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOA, WIERSZ_0_Pin|WIERSZ_1_Pin|WIERSZ_2_Pin|WIERSZ_3_Pin 
                           |WIERSZ_4_Pin|WIERSZ_5_Pin|WIERSZ_6_Pin|WIERSZ_7_Pin 
                           |KOLUMNA_7_Pin|KOLUMNA_6_Pin|KOLUMNA_5_Pin|KOLUMNA_4_Pin 
-                          |KOLUMNA_3_Pin|KOLUMNA_2_Pin|KOLUMNA_1_Pin|KOLUMNA_0_Pin, GPIO_PIN_RESET);
+                          |KOLUMNA_3_Pin|KOLUMNA_2_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : PB9 PB0 PB1 PB2 
-                           PB8 */
-  GPIO_InitStruct.Pin = GPIO_PIN_9|GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2 
-                          |GPIO_PIN_8;
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, KOLUMNA_1_Pin|KOLUMNA_0_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : PB9 PB0 PB1 PB2 */
+  GPIO_InitStruct.Pin = GPIO_PIN_9|GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2;
   GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
@@ -65,28 +73,30 @@ void MX_GPIO_Init(void)
   /*Configure GPIO pins : PAPin PAPin PAPin PAPin 
                            PAPin PAPin PAPin PAPin 
                            PAPin PAPin PAPin PAPin 
-                           PAPin PAPin PAPin PAPin */
+                           PAPin PAPin */
   GPIO_InitStruct.Pin = WIERSZ_0_Pin|WIERSZ_1_Pin|WIERSZ_2_Pin|WIERSZ_3_Pin 
                           |WIERSZ_4_Pin|WIERSZ_5_Pin|WIERSZ_6_Pin|WIERSZ_7_Pin 
                           |KOLUMNA_7_Pin|KOLUMNA_6_Pin|KOLUMNA_5_Pin|KOLUMNA_4_Pin 
-                          |KOLUMNA_3_Pin|KOLUMNA_2_Pin|KOLUMNA_1_Pin|KOLUMNA_0_Pin;
+                          |KOLUMNA_3_Pin|KOLUMNA_2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PBPin PBPin PBPin PBPin 
-                           PBPin */
-  GPIO_InitStruct.Pin = SW_START_Pin|SW_RIGHT_Pin|SW_DOWN_Pin|SW_LEFT_Pin 
-                          |SW_UP_Pin;
+  /*Configure GPIO pins : PBPin PBPin */
+  GPIO_InitStruct.Pin = KOLUMNA_1_Pin|KOLUMNA_0_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PBPin PBPin PBPin PBPin */
+  GPIO_InitStruct.Pin = SW_RIGHT_Pin|SW_DOWN_Pin|SW_LEFT_Pin|SW_UP_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
-  HAL_NVIC_SetPriority(EXTI2_3_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(EXTI2_3_IRQn);
-
   HAL_NVIC_SetPriority(EXTI4_15_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI4_15_IRQn);
 
@@ -107,8 +117,6 @@ void HAL_GPIO_EXTI_Falling_Callback(uint16_t GPIO_Pin) {
 		break;
 	case SW_RIGHT_Pin:
 		if (which_sw != LEFT) which_sw = RIGHT;
-		break;
-	case SW_START_Pin:
 		break;
 	}
 }
