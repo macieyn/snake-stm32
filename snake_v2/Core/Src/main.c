@@ -203,6 +203,7 @@ void start_gameplay_snake() {
 void clear_screen() {
 	HAL_GPIO_WritePin(GPIOA, 0x00FF, WIERSZ_OFF);
 	HAL_GPIO_WritePin(GPIOA, 0xFF00, KOLUMNA_OFF);
+	HAL_GPIO_WritePin(GPIOB, KOLUMNA_0_Pin | KOLUMNA_1_Pin, KOLUMNA_OFF);
 }
 
 /* USER CODE END 4 */

@@ -102,7 +102,15 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 
 			clear_screen();
 
-			HAL_GPIO_WritePin(GPIOA, tab_to_2nd_byte, KOLUMNA_ON);
+			if(przesuniecie == 0b100000 && (spr>>bit_wiersza) > 0)
+				HAL_GPIO_WritePin(KOLUMNA_2_GPIO_Port, KOLUMNA_2_Pin, KOLUMNA_ON);
+			else if(przesuniecie == 0b01000000 && (spr>>bit_wiersza) > 0)
+				HAL_GPIO_WritePin(KOLUMNA_1_GPIO_Port, KOLUMNA_1_Pin, KOLUMNA_ON);
+			else if(przesuniecie == 0b10000000 && (spr>>bit_wiersza) > 0)
+				HAL_GPIO_WritePin(KOLUMNA_0_GPIO_Port, KOLUMNA_0_Pin, KOLUMNA_ON);
+			else
+				HAL_GPIO_WritePin(GPIOA, tab_to_2nd_byte, KOLUMNA_ON);
+
 			HAL_GPIO_WritePin(GPIOA, multi_wiersze, WIERSZ_ON);
 
 			bit_wiersza++;
