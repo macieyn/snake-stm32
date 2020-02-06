@@ -1,0 +1,5 @@
+text.c:3:6:display_sign	32	static
+text.c:12:9:display_ascii	16	static
+text.c:22:9:get_letter_width	24	static
+text.c:34:6:create_display_buffer	40	static
+text.c:54:6:print	16	static

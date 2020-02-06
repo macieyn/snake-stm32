@@ -29,6 +29,6 @@ void set_screen(Coord *food, Snake *snake);
 void update_tail(Snake *snake);
 int8_t  wall_hit(Snake *snake);
 
-char virtual_screen[8];
+extern char virtual_screen[8];
 
 #endif // SNAKE_H_

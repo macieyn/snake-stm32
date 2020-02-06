@@ -27,7 +27,7 @@
 /* Configure GPIO                                                             */
 /*----------------------------------------------------------------------------*/
 /* USER CODE BEGIN 1 */
-
+int8_t game_over = 1;
 /* USER CODE END 1 */
 
 /** Configure pins
@@ -97,6 +97,7 @@ void HAL_GPIO_EXTI_Falling_Callback(uint16_t GPIO_Pin) {
 	switch (GPIO_Pin) {
 	case SW_UP_Pin:
 		which_sw = 'w';
+		game_over = 0;
 		break;
 	case SW_DOWN_Pin:
 		which_sw = 's';
