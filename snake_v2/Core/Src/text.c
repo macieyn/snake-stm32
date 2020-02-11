@@ -20,38 +20,58 @@ uint8_t display_ascii(void){
 }
 
 uint8_t get_letter_width (uint8_t *letter_shape) {
-	uint8_t letter_width = 3;
-	uint8_t shift = 3;
-	for(uint8_t row=0; row<8; row++) {
-		while(letter_shape[row] >> shift > 0) {
-			if (shift > 3) letter_width = shift;
-			shift++;
+	uint8_t letter_width = 0;
+	for(uint8_t row=0; row<5; row++) {
+		while((letter_shape[row] >> letter_width) > 0) {
+			letter_width ++;
 		}
 	}
 	return letter_width;
 }
 
-void create_display_buffer(char *text) {
-	uint8_t letters_count = strlen(text); // sizeof(text) / sizeof(text[0]);
+uint8_t create_display_buffer(char text[]) {
+	uint8_t letters_count = strlen(text);
+	uint8_t col_offset = 8;
+	for(uint8_t col=0; col<8; col++) for(uint8_t row=0; row<8; row++) display_buffer[row][col] = 0;
 
 	for(uint8_t letter=0; letter<letters_count; letter++) {
 		uint8_t current_letter = text[letter];
-		uint8_t *letter_shape = font3x5[current_letter];
+		uint8_t *letter_shape = font3x5[current_letter - ASCII_OFFSET];
 		uint8_t letter_width = get_letter_width(letter_shape);
-		uint8_t letter_height = sizeof(letter_shape) / sizeof(letter_shape[0]);
-		uint8_t col_offset = 0;
+		uint8_t letter_height = 5;
+
 		for(uint8_t row=0; row<8; row++) {
-			for(uint8_t col=letter_width; col>=0; --col) {
-				uint8_t mask = 0b1 << col;
-				if (row < letter_height) display_buffer[col+col_offset][row] = (letter_shape[row] && mask) >> col;
-				else display_buffer[col+col_offset][row] = 0;
+			for(int8_t col=0; col<letter_width; col++) {
+				uint8_t mask = 0b1 << (letter_width - 1 - col);
+
+				if (row < letter_height) display_buffer[row][col+col_offset] = (letter_shape[row] & mask) >> (letter_width - 1 - col);
+				else display_buffer[row][col+col_offset] = 0;
 			}
-			col_offset += letter_width;
+		}
+		col_offset += letter_width;
+		for(uint8_t row=0; row<8; row++) display_buffer[row][col_offset] = 0;
+		col_offset ++;
+	}
+	return col_offset;
+}
+
+void slice_display_buffer(uint8_t offset) {
+
+	for(int8_t row=0; row<8; row++)
+	{
+		virtual_screen[row] = 0;
+		for(uint8_t j=0; j<8; j++)
+		{
+			virtual_screen[row] |= (display_buffer[row][offset+j] << (7-j));
 		}
 	}
 }
 
-void print(char *text) {
-	create_display_buffer(text);
 
+void print(char text[], uint32_t scroll_speed) {
+	uint8_t string_len = create_display_buffer(text);
+	for (uint8_t i=0; i<string_len; i++) {
+		slice_display_buffer(i);
+		HAL_Delay(scroll_speed);
+	}
 }

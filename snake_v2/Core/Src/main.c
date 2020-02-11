@@ -103,6 +103,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 	while (1) {
 
+		char string[] = "WWW.EKO-LED.COM.PL";
+
+		print(string, 100);
+
 		start_gameplay_snake();
 
     /* USER CODE END WHILE */

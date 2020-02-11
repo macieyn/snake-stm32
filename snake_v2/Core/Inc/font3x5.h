@@ -3,7 +3,7 @@
 
 #include "main.h"
 
-#define ASCII_OFFSET 33
+#define ASCII_OFFSET 32
 
 uint8_t font3x5[65][5];
 

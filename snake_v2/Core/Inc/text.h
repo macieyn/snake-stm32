@@ -14,23 +14,13 @@
 
 
 char *text_buffer;
-uint8_t display_buffer [300][8];
-
-uint8_t test_screen[8][18] = {
-		{1,1,1,1,0,1,0,1,0,1,0,0,1,1,1,1,1,0},
-		{1,0,0,1,0,1,1,0,1,1,0,0,1,0,0,1,0,1},
-		{1,1,1,1,1,0,1,0,1,1,0,0,1,1,1,1,0,1},
-		{1,0,0,1,0,1,1,0,1,1,0,0,1,0,0,1,0,1},
-		{1,1,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,0},
-		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-};
+uint8_t display_buffer [8][200];
 
 uint8_t display_ascii();
 void display_sign(uint8_t sign);
 uint8_t get_letter_width (uint8_t *letter_shape);
-void create_display_buffer(char *text);
-void print(char *text);
+uint8_t create_display_buffer(char *text);
+void print(char *text, uint32_t scroll_speed);
+void slice_display_buffer(uint8_t offset);
 
 #endif /* INC_TEXT_H_ */
