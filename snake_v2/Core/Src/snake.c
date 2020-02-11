@@ -104,10 +104,11 @@ int8_t wall_hit(Snake *snake){
 void game_over_screen(Snake *snake, Coord *food){
 	for (int8_t i = 0; i < 3; i ++) {
 		clear_display(virtual_screen);
-		HAL_Delay(100);
+		HAL_Delay(150);
 		set_screen(food, snake);
-		HAL_Delay(100);
+		HAL_Delay(150);
 	}
+	clear_display(virtual_screen);
 }
 
 
@@ -126,6 +127,12 @@ void start_gameplay_snake(void) {
 		random_food(&food);
 
 		int result = 0;
+
+		print_center("3");
+		print_center("2");
+		print_center("1");
+
+		HAL_Delay(500);
 
 		set_screen(&food, &snake);
 
@@ -151,9 +158,16 @@ void start_gameplay_snake(void) {
 			set_screen(&food, &snake);
 		}
 
+
 		game_over_screen(&snake, &food);
 
-		game_over = 1;
-		clear_display(virtual_screen);
+		print_scroll("GAME OVER", 1, 75, SCROLL_LEFT);
+
+		print_scroll("SCORE", 1, 75, SCROLL_LEFT);
+		char score[3];
+		itoa(snake.length, score, 10);
+		print_center(score);
+
 	}
+
 }

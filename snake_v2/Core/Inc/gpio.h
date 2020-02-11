@@ -32,7 +32,7 @@
 /* USER CODE END Includes */
 
 /* USER CODE BEGIN Private defines */
- extern char which_sw;
+extern char which_sw;
 /* USER CODE END Private defines */
 
 void MX_GPIO_Init(void);
