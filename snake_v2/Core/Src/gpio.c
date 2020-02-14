@@ -28,6 +28,7 @@
 /*----------------------------------------------------------------------------*/
 /* USER CODE BEGIN 1 */
 int8_t game_over = 1;
+uint8_t button_pressed = 0;
 /* USER CODE END 1 */
 
 /** Configure pins as 
@@ -106,17 +107,17 @@ void MX_GPIO_Init(void)
 void HAL_GPIO_EXTI_Falling_Callback(uint16_t GPIO_Pin) {
 	switch (GPIO_Pin) {
 	case SW_UP_Pin:
-		if (which_sw != DOWN) which_sw = UP;
+		which_sw = UP;
 		game_over = 0;
 		break;
 	case SW_DOWN_Pin:
-		if (which_sw != UP) which_sw = DOWN;
+		which_sw = DOWN;
 		break;
 	case SW_LEFT_Pin:
-		if (which_sw != RIGHT) which_sw = LEFT;
+		which_sw = LEFT;
 		break;
 	case SW_RIGHT_Pin:
-		if (which_sw != LEFT) which_sw = RIGHT;
+		which_sw = RIGHT;
 		break;
 	}
 }

@@ -98,18 +98,15 @@ int main(void)
 //  char string[60] = "GAME OVER";
   /* USER CODE END 2 */
 
- 
+
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	while (1) {
-		print_scroll("SNAKE", 1, 75, SCROLL_LEFT);
-		for (uint8_t i=0; i<5; i++) {
-			start_gameplay_snake();
-
-		}
-
-		print_scroll("WWW.EKO-LED.COM.PL", 1, 75, SCROLL_LEFT);
+//		print_scroll("SNAKE", 1, 75, SCROLL_LEFT);
+		button_pressed = 0;
+		start_gameplay_snake();
+//		print_scroll("WWW.EKO-LED.COM.PL", 1, 75, SCROLL_LEFT);
 
     /* USER CODE END WHILE */
 

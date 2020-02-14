@@ -33,6 +33,7 @@
 
 /* USER CODE BEGIN Private defines */
 extern char which_sw;
+uint8_t button_pressed;
 /* USER CODE END Private defines */
 
 void MX_GPIO_Init(void);

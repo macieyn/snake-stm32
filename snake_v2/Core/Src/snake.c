@@ -17,6 +17,7 @@ char virtual_screen[8] = {
 int8_t change_direction(Snake *snake, char direction) {
     if (snake->direction == direction) return 0;
     else snake->direction = direction;
+    button_pressed = 0;
     return 1;
 }
 
@@ -63,28 +64,11 @@ void random_food(Coord *food) {
 
 
 void set_screen(Coord *food, Snake *snake){
-    for (int i=0; i<8; i++)
-    {
-        for (int j=0; j<8; j++)
-        {   
-            if (food->x == i && food->y == j)
-            {
-                    char row = virtual_screen[i];
-                    row = 1 << j;
-                    virtual_screen[i] |= row; 
-            }
-
-            for (int k=0; k<SNAKE_MAX_LEN; k++)
-            {
-                if (snake->body[k].x == i && snake->body[k].y == j)
-                {
-                    char row = virtual_screen[i];
-                    row = 1 << j;
-                    virtual_screen[i] |= row; 
-                }
-            }
-        }
-    }
+	virtual_screen[food->x] |= 1 << food->y;
+	for (int k=0; k<SNAKE_MAX_LEN; k++)
+	{
+		virtual_screen[snake->body[k].x] |= 1 << snake->body[k].y;
+	}
 };
 
 
@@ -119,7 +103,7 @@ void start_gameplay_snake(void) {
 		snake.direction = UP;
 		snake.body[0].x = 3, snake.body[0].y = 3;
 		which_sw = UP;
-		for (int i = 1; i < (sizeof(snake.body) / sizeof(snake.body[0])); i++) {
+		for (int i = 1; i < SNAKE_MAX_LEN; i++) {
 			snake.body[i].x = -1, snake.body[i].y = -1;
 		}
 
@@ -129,16 +113,18 @@ void start_gameplay_snake(void) {
 		int result = 0;
 
 		print_center("3");
+		HAL_Delay(250);
 		print_center("2");
+		HAL_Delay(250);
 		print_center("1");
 
-		HAL_Delay(500);
+		HAL_Delay(250);
 
 		set_screen(&food, &snake);
 
 		while (result != -1) {
 
-			HAL_Delay(GAME_DELAY/2);
+			HAL_Delay(GAME_DELAY - snake.length*6);
 
 			change_direction(&snake, which_sw);
 
@@ -161,9 +147,9 @@ void start_gameplay_snake(void) {
 
 		game_over_screen(&snake, &food);
 
-		print_scroll("GAME OVER", 1, 75, SCROLL_LEFT);
+//		print_scroll("GAME OVER", 1, 75, SCROLL_LEFT);
 
-		print_scroll("SCORE", 1, 75, SCROLL_LEFT);
+//		print_scroll("SCORE", 1, 75, SCROLL_LEFT);
 		char score[3];
 		itoa(snake.length, score, 10);
 		print_center(score);
