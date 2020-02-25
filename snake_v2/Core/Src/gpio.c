@@ -94,7 +94,7 @@ void MX_GPIO_Init(void)
   /*Configure GPIO pins : PBPin PBPin PBPin PBPin */
   GPIO_InitStruct.Pin = SW_RIGHT_Pin|SW_DOWN_Pin|SW_LEFT_Pin|SW_UP_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
@@ -105,19 +105,39 @@ void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 2 */
 void HAL_GPIO_EXTI_Falling_Callback(uint16_t GPIO_Pin) {
+//	which_sw = GPIO_Pin;
+//	game_over = 0;
+//	if (GPIO_Pin == SW_UP_Pin && which_sw != DOWN) {
+//		HAL_Delay(30);
+//		if (GPIO_Pin == SW_UP_Pin) which_sw = UP;
+//		game_over = 0;
+//	}
+//	else if (GPIO_Pin == SW_DOWN_Pin && which_sw != UP){
+//		HAL_Delay(30);
+//		if (GPIO_Pin == SW_DOWN_Pin) which_sw = DOWN;}
+//	else if (GPIO_Pin == SW_LEFT_Pin && which_sw != RIGHT){
+//		HAL_Delay(30);
+//		if (GPIO_Pin == SW_LEFT_Pin) which_sw = LEFT;}
+//	else if (GPIO_Pin == SW_RIGHT_Pin && which_sw != LEFT){
+//		if (GPIO_Pin == SW_RIGHT_Pin) which_sw = RIGHT;}
+
 	switch (GPIO_Pin) {
 	case SW_UP_Pin:
-		which_sw = UP;
+		if (which_sw != DOWN)
+			which_sw = UP;
 		game_over = 0;
 		break;
 	case SW_DOWN_Pin:
-		which_sw = DOWN;
+		if (which_sw != UP)
+			which_sw = DOWN;
 		break;
 	case SW_LEFT_Pin:
-		which_sw = LEFT;
+		if (which_sw != RIGHT)
+			which_sw = LEFT;
 		break;
 	case SW_RIGHT_Pin:
-		which_sw = RIGHT;
+		if (which_sw != LEFT)
+			which_sw = RIGHT;
 		break;
 	}
 }

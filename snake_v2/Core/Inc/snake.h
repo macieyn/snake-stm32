@@ -17,10 +17,10 @@ typedef struct Coord {
 typedef struct Snake {
     int8_t length;
     Coord body[SNAKE_MAX_LEN];
-    char direction;
+    uint16_t direction;
 } Snake; 
 
-int8_t  change_direction(Snake *snake, char direction);
+int8_t  change_direction(Snake *snake, uint16_t direction);
 void clear_display(char display[]);
 void  food_reached(Snake *snake, Coord *food);
 int8_t move_head(Snake *snake);

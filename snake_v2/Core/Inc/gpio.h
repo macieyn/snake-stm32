@@ -32,7 +32,7 @@
 /* USER CODE END Includes */
 
 /* USER CODE BEGIN Private defines */
-extern char which_sw;
+extern uint16_t which_sw;
 uint8_t button_pressed;
 /* USER CODE END Private defines */
 

@@ -46,7 +46,7 @@
 
 /* USER CODE BEGIN PV */
 
-char which_sw = 0;
+uint16_t which_sw = 0x0100;
 
 /* USER CODE END PV */
 
@@ -94,17 +94,18 @@ int main(void)
   MX_TIM14_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim14);
-
+  which_sw = UP;
 //  char string[60] = "GAME OVER";
   /* USER CODE END 2 */
-
-
+ 
+ 
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	while (1) {
 //		print_scroll("SNAKE", 1, 75, SCROLL_LEFT);
-		button_pressed = 0;
+//		char buff[2] = {which_sw};
+//		print_center(buff);
 		start_gameplay_snake();
 //		print_scroll("WWW.EKO-LED.COM.PL", 1, 75, SCROLL_LEFT);
 

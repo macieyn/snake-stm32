@@ -14,10 +14,9 @@ char virtual_screen[8] = {
 };
 
 
-int8_t change_direction(Snake *snake, char direction) {
+int8_t change_direction(Snake *snake, uint16_t direction) {
     if (snake->direction == direction) return 0;
     else snake->direction = direction;
-    button_pressed = 0;
     return 1;
 }
 
@@ -102,7 +101,6 @@ void start_gameplay_snake(void) {
 		snake.length = 0;
 		snake.direction = UP;
 		snake.body[0].x = 3, snake.body[0].y = 3;
-		which_sw = UP;
 		for (int i = 1; i < SNAKE_MAX_LEN; i++) {
 			snake.body[i].x = -1, snake.body[i].y = -1;
 		}

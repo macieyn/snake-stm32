@@ -93,7 +93,7 @@ void print_center(char character[]) {
 //	print_scroll(len, 1, 100, SCROLL_RIGHT);
 	if (string_len-8 > 5) slice_display_buffer(7, 1);
 	else slice_display_buffer(5, 1);
-	HAL_Delay(800);
+	HAL_Delay(50);
 	clear_display(virtual_screen);
 }
 
